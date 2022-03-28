@@ -17,7 +17,7 @@ function Footer() {
         <br />
         Open-sourced on {""}
         <a
-          href="https://github.com/sarahkydnc/shecodes-plus-weather-app"
+          href="https://github.com/sarahkydnc/shecodes-react-weather-app"
           target="_blank"
           rel="noreferrer"
           className="clickthru-links"
