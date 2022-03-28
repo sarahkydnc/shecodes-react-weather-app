@@ -16,6 +16,7 @@ function Music() {
           frameBorder="0"
           allowFullScreen=""
           allow="autoplay; clipboard-write; encrypted-media; FullScreen; picture-in-picture"
+          title="Spotify music player"
         ></iframe>
       </div>
     </div>
