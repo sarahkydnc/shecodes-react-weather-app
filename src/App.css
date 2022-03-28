@@ -1,38 +1,222 @@
+:root {
+  --title-font: "Space Mono", monospace;
+  --body-font: "Space Grotesk", sans-serif;
+  --highlight-color: #ff9500;
+  --highlight-alt-color: #ec6302;
+  --primary-color: #0f0c0a;
+  --secondary-color: #33251c;
+  --tertiary-color: #f4ede8;
+}
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--tertiary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+.subtitle,
+.forecast-day,
+.music-greeting {
+  color: var(--tertiary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+.current-temperature,
+.forecast-high,
+.clickthru-links:hover,
+#current-location:hover {
+  color: var(--highlight-color);
 }
 
-.App-link {
-  color: #61dafb;
+.current-condition,
+.data-highlight,
+.forecast-low,
+.coded-by,
+.clickthru-links,
+#current-location {
+  color: var(--highlight-alt-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header,
+h1,
+h2 {
+  font-family: var(--title-font);
+}
+
+p {
+  font-family: var(--body-font);
+}
+
+header {
+  text-align: center;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1000px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  color: var(--highlight-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--highlight-color) !important;
+}
+
+.btn:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--highlight-color) !important;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.divider {
+  border-top: 1.5px solid var(--secondary-color);
+}
+
+.weather-today,
+.weather-forecast,
+.spotify-api {
+  background-color: #0f0c0a;
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.weather-today {
+  width: 600px;
+}
+
+.weather-today img {
+  height: 200px;
+  width: 200px;
+}
+
+.current-date {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.current-condition {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.current-temperature,
+.temperature-convert {
+  font-weight: 700;
+}
+
+.current-temperature {
+  font-size: 140px;
+}
+
+.temperature-convert {
+  display: inline;
+  font-size: 20px;
+}
+
+.temperature-range,
+.weather-others {
+  font-size: 16px;
+}
+
+.data-highlight {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.forecast-day,
+.forecast-high,
+.forecast-low {
+  font-size: 20px;
+}
+
+.forecast-day {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.forecast-high {
+  font-weight: bold;
+}
+
+.forecast-icon {
+  margin-left: 5px;
+  padding-bottom: 15px;
+}
+
+.weather-forecast,
+.spotify-api {
+  width: 290px;
+}
+
+.music-greeting {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.coded-by {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.clickthru-links {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#find-city-form {
+  width: 600px;
+}
+
+#current-location {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#current-location:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#icon {
+  margin-top: -15px;
+  margin-bottom: -35px;
 }
