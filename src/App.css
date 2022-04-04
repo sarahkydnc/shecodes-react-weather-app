@@ -84,18 +84,18 @@ h2 {
   margin-bottom: 20px;
 }
 
-.btn {
+#find-city-form .btn {
   color: var(--highlight-color) !important;
   background-color: var(--primary-color) !important;
   border-color: var(--highlight-color) !important;
 }
 
-.btn:hover {
+#find-city-form .btn:hover {
   color: var(--primary-color) !important;
   background-color: var(--highlight-color) !important;
 }
 
-.subtitle {
+.weather-today .subtitle {
   font-size: 22px;
   font-weight: normal;
 }
@@ -121,58 +121,58 @@ h2 {
   width: 200px;
 }
 
-.current-date {
+.weather-today .current-date {
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.current-condition {
+.weather-today .current-condition {
   font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.current-temperature,
-.temperature-convert {
+.weather-today .current-temperature,
+.weather-today .temperature-convert {
   font-weight: 700;
 }
 
-.current-temperature {
+.weather-today .current-temperature {
   font-size: 140px;
 }
 
-.temperature-convert {
+.weather-today .temperature-convert {
   display: inline;
   font-size: 20px;
 }
 
-.temperature-range,
-.weather-others {
+.weather-today .temperature-range,
+.weather-today .weather-others {
   font-size: 16px;
 }
 
-.data-highlight {
+.weather-today .data-highlight {
   font-size: 24px;
   font-weight: bold;
 }
 
-.forecast-day,
-.forecast-high,
-.forecast-low {
+.weather-forecast .forecast-day,
+.weather-forecast .forecast-high,
+.weather-forecast .forecast-low {
   font-size: 20px;
 }
 
-.forecast-day {
+.weather-forecast .forecast-day {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.forecast-high {
+.weather-forecast .forecast-high {
   font-weight: bold;
 }
 
-.forecast-icon {
+.weather-forecast .forecast-icon {
   margin-left: 5px;
   padding-bottom: 15px;
 }
@@ -182,7 +182,7 @@ h2 {
   width: 290px;
 }
 
-.music-greeting {
+.spotify-api .music-greeting {
   margin-bottom: 25px;
   font-size: 16px;
   font-weight: bold;
@@ -194,7 +194,7 @@ h2 {
   font-weight: lighter;
 }
 
-.clickthru-links {
+.coded-by .clickthru-links {
   font-weight: bold;
   text-decoration: none;
 }
