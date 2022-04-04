@@ -1,7 +1,9 @@
 import React from "react";
+
+import Search from "./Search";
 import WeatherIcon from "./icons/01d.svg";
 
-function WeatherToday() {
+function WeatherToday(props) {
   return (
     <div className="weather-today py-4 px-2 shadow-md">
       <div className="container-fluid">
@@ -52,7 +54,7 @@ function WeatherToday() {
             <div className="row">
               <div className="d-flex weather-temperature justify-content-center">
                 <p className="current-temperature float-left" id="current-temp">
-                  31°
+                  {props.data.temperature}
                 </p>
                 <div className="float-left">
                   <p className="current-temperature fs-4 px-5 py-5 mt-3">
