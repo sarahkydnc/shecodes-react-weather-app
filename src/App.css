@@ -141,11 +141,11 @@ h2 {
 }
 
 .weather-today .current-temperature {
-  font-size: 130px;
+  font-size: 125px;
 }
 
 .weather-today .temperature-convert {
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .weather-today .temperature-range,
