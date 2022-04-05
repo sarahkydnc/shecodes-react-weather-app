@@ -114,6 +114,7 @@ h2 {
 
 .weather-today {
   width: 600px;
+  height: 650px;
 }
 
 .weather-today img {
@@ -131,6 +132,7 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
+  line-height: 1.25;
 }
 
 .weather-today .current-temperature,
@@ -139,11 +141,10 @@ h2 {
 }
 
 .weather-today .current-temperature {
-  font-size: 140px;
+  font-size: 130px;
 }
 
 .weather-today .temperature-convert {
-  display: inline;
   font-size: 20px;
 }
 

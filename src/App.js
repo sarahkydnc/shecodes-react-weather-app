@@ -1,5 +1,4 @@
 import Search from "./Search";
-import WeatherToday from "./WeatherToday";
 import Forecast from "./Forecast";
 import Music from "./Music";
 import Footer from "./Footer";
@@ -17,9 +16,7 @@ function App() {
 
         <div className="row">
           <div className="col-sm-8">
-            <Search />
-            <br />
-            <WeatherToday />
+            <Search defaultLocation="Singapore" />
           </div>
           <div className="col-sm-4">
             <Forecast />

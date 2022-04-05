@@ -3,16 +3,19 @@ import { useState } from "react";
 import axios from "axios";
 
 import WeatherToday from "./WeatherToday";
-import Forecast from "./Forecast";
 
-function Search() {
+function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [location, setLocation] = useState(props.defaultLocation);
+
   function handleResponse(response) {
-    console.log(response.data.main);
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
+      country: response.data.sys.country,
       temperature: Math.round(response.data.main.temp),
+      description: response.data.weather[0].description,
       feelsLike: Math.round(response.data.main.feels_like),
       temperatureLow: Math.round(response.data.main.temp_min),
       temperatureHigh: Math.round(response.data.main.temp_max),
@@ -22,14 +25,31 @@ function Search() {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    processSearch();
+  }
+
+  function handleLocation(event) {
+    setLocation(event.target.value);
+  }
+
+  function processSearch() {
+    const unitAPI = `metric`;
+    const keyAPI = `7847c8cdbdd3f4d4e829321a937f5c42`;
+    const urlAPI = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${keyAPI}&units=${unitAPI}`;
+    axios.get(urlAPI).then(handleResponse);
+  }
+
   if (weatherData.ready) {
     return (
       <div>
-        <form id="find-city-form">
+        <form id="find-city-form" onSubmit={handleSubmit}>
           <div className="input-group mb-3">
             <input
               type="text"
               autoFocus="on"
+              onChange={handleLocation}
               className="form-control"
               placeholder="Enter a city (e.g. San Francisco)"
               id="find-input"
@@ -42,15 +62,11 @@ function Search() {
         <p id="current-location" className="mt-4 text-center">
           Use my current location
         </p>
+        <WeatherToday data={weatherData} />
       </div>
     );
   } else {
-    let cityAPI = `Singapore`;
-    const unitAPI = `metric`;
-    const keyAPI = `7847c8cdbdd3f4d4e829321a937f5c42`;
-    const urlAPI = `https://api.openweathermap.org/data/2.5/weather?q=${cityAPI}&appid=${keyAPI}&units=${unitAPI}`;
-    axios.get(urlAPI).then(handleResponse);
-
+    processSearch();
     return `Loading...`;
   }
 }
