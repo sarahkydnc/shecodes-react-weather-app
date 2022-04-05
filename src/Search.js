@@ -6,11 +6,11 @@ import WeatherToday from "./WeatherToday";
 import Forecast from "./Forecast";
 
 function Search() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
+    console.log(response.data.main);
     setWeatherData({
+      ready: true,
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       feelsLike: Math.round(response.data.main.feels_like),
@@ -20,10 +20,9 @@ function Search() {
       wind: Math.round(response.data.wind.speed),
       pressure: Math.round(response.data.main.pressure),
     });
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div>
         <form id="find-city-form">
@@ -43,8 +42,6 @@ function Search() {
         <p id="current-location" className="mt-4 text-center">
           Use my current location
         </p>
-
-        <WeatherToday temperature={temperature} />
       </div>
     );
   } else {
