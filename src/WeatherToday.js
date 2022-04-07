@@ -45,7 +45,7 @@ function WeatherToday(props) {
               />
             </div>
             <div className="row">
-              <p className="current-condition mt-5">{props.data.description}</p>
+              <p className="current-condition">{props.data.description}</p>
             </div>
           </div>
 

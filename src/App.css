@@ -129,7 +129,8 @@ h2 {
 }
 
 .weather-today .current-condition {
-  font-size: 30px;
+  margin-top: 33px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.25;
