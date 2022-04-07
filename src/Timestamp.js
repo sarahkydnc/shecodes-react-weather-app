@@ -42,7 +42,11 @@ function Timestamp(props) {
     minutes = `0${minutes}`;
   }
 
-  return `${day}, ${date} ${month} ${year}, ${hours}: ${minutes}`;
+  return (
+    <div>
+      {day}, {date} {month} {year}, {hours}:{minutes}
+    </div>
+  );
 }
 
 export default Timestamp;
