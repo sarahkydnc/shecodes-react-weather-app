@@ -1,6 +1,6 @@
 import React from "react";
-import WeatherIcon from "./icons/01d.svg";
 import Timestamp from "./Timestamp";
+import WeatherIcon from "./WeatherIcon";
 
 function WeatherToday(props) {
   return (
@@ -36,13 +36,8 @@ function WeatherToday(props) {
 
         <div className="row">
           <div className="col-4 justify-content-center">
-            <div className="row mt-3">
-              <img
-                src={WeatherIcon}
-                alt="weather-icon"
-                id="icon"
-                className="w-100"
-              />
+            <div className="row mt-2">
+              <WeatherIcon code={props.data.icon} className="w-100" id="icon" />
             </div>
             <div className="row">
               <p className="current-condition">{props.data.description}</p>
