@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./icons/01d.svg";
+import Timestamp from "./Timestamp";
 
 function WeatherToday(props) {
   return (
@@ -20,7 +21,7 @@ function WeatherToday(props) {
 
           <div className="col-6">
             <p className="current-date mt-2 text-end">
-              Thursday, 10 March 2022, 15:30
+              <Timestamp date={props.data.date} />
             </p>
           </div>
         </div>
@@ -63,7 +64,8 @@ function WeatherToday(props) {
             <div className="row temperature-range text-middle">
               <div className="col-4">
                 <p className="current-feel">
-                  Feels like:{" "}
+                  Feels like
+                  <br />
                   <span className="data-highlight">
                     {props.data.feelsLike}°
                   </span>
@@ -71,7 +73,7 @@ function WeatherToday(props) {
               </div>
               <div className="col-4">
                 <p className="temperature-low">
-                  Low:
+                  Low
                   <br />
                   <span className="data-highlight low-data">
                     {props.data.temperatureLow}°
@@ -80,7 +82,7 @@ function WeatherToday(props) {
               </div>
               <div className="col-4">
                 <p className="temperature-high">
-                  High:
+                  High
                   <br />
                   <span className="data-highlight high-data">
                     {props.data.temperatureHigh}°
@@ -92,21 +94,21 @@ function WeatherToday(props) {
             <div className="row weather-others text-middle mt-2">
               <div className="col-4">
                 <p className="current-humidity">
-                  Humidity:
+                  Humidity
                   <br />
                   <span className="data-highlight">{props.data.humidity}%</span>
                 </p>
               </div>
               <div className="col-4">
                 <p className="current-wind">
-                  Wind Speed:
+                  Wind Speed
                   <br />
                   <span className="data-highlight">{props.data.wind} km/h</span>
                 </p>
               </div>
               <div className="col-4">
                 <p className="current-pressure">
-                  Pressure:
+                  Pressure
                   <br />
                   <span className="data-highlight">
                     {props.data.pressure} mb

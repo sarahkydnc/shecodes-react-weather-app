@@ -14,6 +14,7 @@ function Search(props) {
       ready: true,
       city: response.data.name,
       country: response.data.sys.country,
+      date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       feelsLike: Math.round(response.data.main.feels_like),
