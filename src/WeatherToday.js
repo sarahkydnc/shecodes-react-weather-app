@@ -1,6 +1,7 @@
 import React from "react";
 import Timestamp from "./Timestamp";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemp from "./WeatherTemp";
 
 function WeatherToday(props) {
   return (
@@ -46,14 +47,7 @@ function WeatherToday(props) {
 
           <div className="col-8">
             <div className="row">
-              <div className="d-flex weather-temperature justify-content-center">
-                <p className="current-temperature float-left" id="current-temp">
-                  {props.data.temperature}°
-                </p>
-                <div className="float-left">
-                  <p className="temperature-convert fs-4 px-5 py-5"> C | F </p>
-                </div>
-              </div>
+              <WeatherTemp celsius={props.data.temperature} />°
             </div>
 
             <div className="row temperature-range text-middle">
