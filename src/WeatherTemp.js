@@ -22,7 +22,7 @@ function WeatherTemp(props) {
         </p>
         <div className="float-left">
           <div className="temperature-convert fs-4 px-5 py-5">
-            <button href="/" className="btn btn-outline-light mb-3">
+            <button href="/" className="btn btn-outline-light mb-3 active">
               C
             </button>
             <button
@@ -52,7 +52,7 @@ function WeatherTemp(props) {
             >
               C
             </button>
-            <button href="/" className="btn btn-outline-warning">
+            <button href="/" className="btn btn-outline-warning active">
               F
             </button>
           </div>
