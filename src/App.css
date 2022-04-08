@@ -222,6 +222,11 @@ h2 {
   margin-top: -5px;
 }
 
+#metric-button,
+#imperial-button {
+  width: 50px;
+}
+
 #metric-button {
   color: var(--highlight-color) !important;
   background-color: var(--primary-color) !important;
