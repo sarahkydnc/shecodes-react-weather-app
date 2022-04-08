@@ -18,7 +18,7 @@ function WeatherTemp(props) {
     return (
       <div className="d-flex weather-temperature justify-content-center">
         <p className="current-temperature float-left" id="current-temp">
-          {Math.round(props.celsius)}°
+          {Math.round(props.celsius)}
         </p>
         <div className="float-left">
           <p className="temperature-convert fs-4 px-5 py-5">

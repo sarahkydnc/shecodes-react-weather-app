@@ -1,5 +1,6 @@
 import React from "react";
 import Timestamp from "./Timestamp";
+import CountryName from "./CountryName";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
 
@@ -17,7 +18,9 @@ function WeatherToday(props) {
 
         <div className="row text-start mt-4">
           <div className="col-6">
-            <h2 className="current-country">{props.data.country}</h2>
+            <h2 className="current-country">
+              <CountryName country={props.data.country} />
+            </h2>
           </div>
 
           <div className="col-6">
