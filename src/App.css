@@ -150,6 +150,10 @@ h3 {
   font-size: 16px;
 }
 
+.weather-today .temperature-range {
+  margin-top: 20px;
+}
+
 .weather-today .data-highlight {
   font-size: 24px;
   font-weight: bold;
