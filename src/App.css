@@ -129,8 +129,8 @@ h2 {
 }
 
 .weather-today .current-condition {
-  margin-top: 33px;
-  font-size: 28px;
+  margin-top: -8px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.25;
@@ -220,5 +220,4 @@ h2 {
 
 #icon {
   margin-top: -5px;
-  margin-bottom: -35px;
 }

@@ -50,7 +50,7 @@ function WeatherToday(props) {
 
           <div className="col-8">
             <div className="row">
-              <WeatherTemp celsius={props.data.temperature} />°
+              <WeatherTemp celsius={props.data.temperature} />
             </div>
 
             <div className="row temperature-range text-middle">

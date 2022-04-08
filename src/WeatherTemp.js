@@ -18,16 +18,21 @@ function WeatherTemp(props) {
     return (
       <div className="d-flex weather-temperature justify-content-center">
         <p className="current-temperature float-left" id="current-temp">
-          {Math.round(props.celsius)}
+          {Math.round(props.celsius)}°
         </p>
         <div className="float-left">
-          <p className="temperature-convert fs-4 px-5 py-5">
-            {" "}
-            C |{" "}
-            <a href="/" onClick={showImperial}>
+          <div className="temperature-convert fs-4 px-5 py-5">
+            <button href="/" className="btn btn-outline-light mb-3">
+              C
+            </button>
+            <button
+              href="/"
+              className="btn btn-outline-warning"
+              onClick={showImperial}
+            >
               F
-            </a>{" "}
-          </p>
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -39,13 +44,18 @@ function WeatherTemp(props) {
           {Math.round(fahrenheit)}°
         </p>
         <div className="float-left">
-          <p className="temperature-convert fs-4 px-5 py-5">
-            {" "}
-            <a href="/" onClick={showMetric}>
+          <div className="temperature-convert fs-4 px-5 py-5">
+            <button
+              href="/"
+              className="btn btn-outline-light mb-3"
+              onClick={showMetric}
+            >
               C
-            </a>{" "}
-            | F{" "}
-          </p>
+            </button>
+            <button href="/" className="btn btn-outline-warning">
+              F
+            </button>
+          </div>
         </div>
       </div>
     );
