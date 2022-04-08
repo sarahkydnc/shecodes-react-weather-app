@@ -141,6 +141,7 @@ h3 {
 }
 
 .weather-today .temperature-convert {
+  padding-top: 50px;
   font-size: 10px;
 }
 
@@ -249,8 +250,6 @@ h3 {
 }
 
 #imperial-button {
-  display: inline;
-  margin-left: 20px;
   color: var(--highlight-alt-color) !important;
   background-color: var(--primary-color) !important;
   border-color: var(--highlight-alt-color) !important;

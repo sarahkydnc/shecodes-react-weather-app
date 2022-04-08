@@ -22,7 +22,7 @@ function WeatherTemp(props) {
             {Math.round(props.celsius)}°
           </div>
           <div className="col-3">
-            <div className="temperature-convert fs-4 px-5 py-5">
+            <div className="temperature-convert justify-content-end fs-4">
               <button href="/" className="btn mb-3" id="metric-button">
                 C
               </button>
@@ -77,7 +77,7 @@ function WeatherTemp(props) {
             {Math.round(fahrenheit)}°
           </div>
           <div className="col-3">
-            <div className="temperature-convert fs-4 px-5 py-5">
+            <div className="temperature-convert justify-content-end fs-4">
               <button
                 href="/"
                 className="btn mb-3"
