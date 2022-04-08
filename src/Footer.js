@@ -33,7 +33,7 @@ function Footer() {
         >
           Netlify
         </a>{" "}
-        {""}| Weather icons by {""}
+        {""}| <br /> Weather icons by {""}
         <a
           href="https://basmilius.github.io/weather-icons/index-line.html"
           target="_blank"
