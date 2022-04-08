@@ -84,17 +84,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-#find-city-form .btn {
-  color: var(--highlight-color) !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--highlight-color) !important;
-}
-
-#find-city-form .btn:hover {
-  color: var(--primary-color) !important;
-  background-color: var(--highlight-color) !important;
-}
-
 .weather-today .subtitle {
   font-size: 22px;
   font-weight: normal;
@@ -205,6 +194,17 @@ h2 {
   width: 600px;
 }
 
+#find-city-form .btn {
+  color: var(--highlight-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--highlight-color) !important;
+}
+
+#find-city-form .btn:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--highlight-color) !important;
+}
+
 #current-location {
   font-size: 14px;
   font-style: italic;
@@ -220,4 +220,26 @@ h2 {
 
 #icon {
   margin-top: -5px;
+}
+
+#metric-button {
+  color: var(--highlight-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--highlight-color) !important;
+}
+
+#metric-button:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--highlight-color) !important;
+}
+
+#imperial-button {
+  color: var(--highlight-alt-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--highlight-alt-color) !important;
+}
+
+#imperial-button:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--highlight-alt-color) !important;
 }
