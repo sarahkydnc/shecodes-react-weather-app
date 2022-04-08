@@ -22,10 +22,9 @@ function App() {
             <Forecast />
             <br />
             <Music />
-            <br />
-            <Footer />
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

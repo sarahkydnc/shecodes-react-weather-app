@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <p className="coded-by text-start">
+      <p className="coded-by text-middle mt-5">
         This app was created by {""}
         <a
           href="https://www.sarahkaydence.com"
@@ -13,9 +13,7 @@ function Footer() {
         >
           Sarah Kaydence
         </a>
-        ⚡️
-        <br />
-        Open-sourced on {""}
+        ⚡️ | Open-sourced on {""}
         <a
           href="https://github.com/sarahkydnc/shecodes-react-weather-app"
           target="_blank"
@@ -33,7 +31,7 @@ function Footer() {
         >
           Netlify
         </a>{" "}
-        {""}| <br /> Weather icons by {""}
+        {""}| Weather icons by {""}
         <a
           href="https://basmilius.github.io/weather-icons/index-line.html"
           target="_blank"

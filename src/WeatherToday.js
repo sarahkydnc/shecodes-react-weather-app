@@ -6,7 +6,7 @@ import WeatherTemp from "./WeatherTemp";
 
 function WeatherToday(props) {
   return (
-    <div className="weather-today py-4 px-2 shadow-md">
+    <div className="weather-today py-4 px-2 mt-2">
       <div className="container-fluid">
         <div className="row">
           <p className="subtitle text-middle mt-2 mb-4 fs-2">
@@ -18,9 +18,9 @@ function WeatherToday(props) {
 
         <div className="row text-start mt-4">
           <div className="col-6">
-            <h2 className="current-country">
+            <h3 className="current-country">
               <CountryName country={props.data.country} />
-            </h2>
+            </h3>
           </div>
 
           <div className="col-6">
@@ -32,16 +32,20 @@ function WeatherToday(props) {
 
         <div className="row">
           <div className="col">
-            <h1 className="current-city text-start text-uppercase">
+            <h2 className="current-city text-start text-uppercase">
               {props.data.city}
-            </h1>
+            </h2>
           </div>
         </div>
 
         <div className="row">
           <div className="col-4 justify-content-center">
-            <div className="row mt-2">
-              <WeatherIcon code={props.data.icon} className="w-100" id="icon" />
+            <div className="row">
+              <WeatherIcon
+                code={props.data.icon}
+                className="w-100"
+                id="weather-icon"
+              />
             </div>
             <div className="row">
               <p className="current-condition">{props.data.description}</p>
@@ -49,39 +53,12 @@ function WeatherToday(props) {
           </div>
 
           <div className="col-8">
-            <div className="row">
-              <WeatherTemp celsius={props.data.temperature} />
-            </div>
-
-            <div className="row temperature-range text-middle">
-              <div className="col-4">
-                <p className="current-feel">
-                  Feels like
-                  <br />
-                  <span className="data-highlight">
-                    {props.data.feelsLike}°
-                  </span>
-                </p>
-              </div>
-              <div className="col-4">
-                <p className="temperature-low">
-                  Low
-                  <br />
-                  <span className="data-highlight low-data">
-                    {props.data.temperatureLow}°
-                  </span>
-                </p>
-              </div>
-              <div className="col-4">
-                <p className="temperature-high">
-                  High
-                  <br />
-                  <span className="data-highlight high-data">
-                    {props.data.temperatureHigh}°
-                  </span>
-                </p>
-              </div>
-            </div>
+            <WeatherTemp
+              celsius={props.data.temperature}
+              feel={props.data.feelsLike}
+              low={props.data.temperatureLow}
+              high={props.data.temperatureHigh}
+            />
 
             <div className="row weather-others text-middle mt-2">
               <div className="col-4">

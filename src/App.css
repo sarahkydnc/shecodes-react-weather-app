@@ -26,6 +26,7 @@ p,
 
 h1,
 h2,
+h3,
 .current-temperature,
 .forecast-high,
 .clickthru-links:hover,
@@ -44,7 +45,8 @@ h2,
 
 header,
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--title-font);
 }
 
@@ -72,8 +74,13 @@ section {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .container {
@@ -103,7 +110,6 @@ h2 {
 
 .weather-today {
   width: 600px;
-  height: 650px;
 }
 
 .weather-today img {
@@ -181,8 +187,7 @@ h2 {
 }
 
 .coded-by {
-  margin-top: -5px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: lighter;
 }
 
@@ -219,8 +224,12 @@ h2 {
   text-decoration: none;
 }
 
-#icon {
-  margin-top: -5px;
+#weather-icon {
+  padding-bottom: 15px;
+}
+
+#current-temp {
+  font-family: var(--title-font);
 }
 
 #metric-button,
@@ -240,6 +249,8 @@ h2 {
 }
 
 #imperial-button {
+  display: inline;
+  margin-left: 20px;
   color: var(--highlight-alt-color) !important;
   background-color: var(--primary-color) !important;
   border-color: var(--highlight-alt-color) !important;
