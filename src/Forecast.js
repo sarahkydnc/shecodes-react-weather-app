@@ -4,7 +4,7 @@ import PartlyCloudyIcon from "./icons/02d.svg";
 function Forecast() {
   return (
     <div className="weather-forecast px-2">
-      <p className="subtitle">
+      <p className="subtitle fs-5">
         Here's your <strong>FORECAST:</strong>
       </p>
 
