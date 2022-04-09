@@ -68,8 +68,7 @@ function WeatherTemp(props) {
     let fahrenheitFeel = (props.feel * 9) / 5 + 32;
     let fahrenheitLow = (props.low * 9) / 5 + 32;
     let fahrenheitHigh = (props.high * 9) / 5 + 32;
-    // {Math.round(fahrenheit)}°
-    // onClick={showMetric}
+
     return (
       <div>
         <div className="row">
