@@ -6,9 +6,9 @@ function Music() {
       <p className="music-greeting">Some music to get you going!</p>
 
       <div className="container-fluid px-3">
-        <div className="divider mb-3"></div>
+        <div className="divider"></div>
       </div>
-      <div className="spotify-player px-3 mt-4">
+      <div className="spotify-player px-3">
         <iframe
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DXc8kgYqQLMfH?utm_source=generator"
           width="100%"

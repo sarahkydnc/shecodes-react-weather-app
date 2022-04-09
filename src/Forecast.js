@@ -3,13 +3,13 @@ import PartlyCloudyIcon from "./icons/02d.svg";
 
 function Forecast() {
   return (
-    <div className="weather-forecast py-4 px-2 shadow-md">
+    <div className="weather-forecast px-2">
       <p className="subtitle">
         Here's your <strong>FORECAST:</strong>
       </p>
 
       <div className="forecast-days container-fluid" id="forecast">
-        <div className="divider mb-3"></div>
+        <div className="divider mt-4 mb-4"></div>
 
         <div className="row">
           <div className="col-3">
