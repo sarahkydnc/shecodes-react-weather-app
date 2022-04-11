@@ -1,5 +1,5 @@
 import React from "react";
-import PartlyCloudyIcon from "./icons/02d.svg";
+import WeatherIcon from "./WeatherIcon";
 
 function Forecast() {
   return (
@@ -16,12 +16,7 @@ function Forecast() {
             <p className="forecast-day">Sun</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="01d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -36,12 +31,7 @@ function Forecast() {
             <p className="forecast-day">Mon</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="02d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -56,12 +46,7 @@ function Forecast() {
             <p className="forecast-day">Tue</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="03d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -76,12 +61,7 @@ function Forecast() {
             <p className="forecast-day">Wed</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="04d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -96,12 +76,7 @@ function Forecast() {
             <p className="forecast-day">Thu</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="09d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -116,12 +91,7 @@ function Forecast() {
             <p className="forecast-day">Fri</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="10d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
@@ -136,12 +106,7 @@ function Forecast() {
             <p className="forecast-day">Sat</p>
           </div>
           <div className="col-3">
-            <img
-              src={PartlyCloudyIcon}
-              alt="weather-icon"
-              id="icon"
-              className="w-100 forecast-icon"
-            />
+            <WeatherIcon code="11d" id="icon" className="w-100 forecast-icon" />
           </div>
           <div className="col-3">
             <p className="forecast-high">31°</p>
