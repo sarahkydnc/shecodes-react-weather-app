@@ -11,7 +11,7 @@ function Forecast() {
       <div className="forecast-days container-fluid" id="forecast">
         <div className="divider mt-4 mb-4"></div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Sun</p>
           </div>
@@ -26,7 +26,7 @@ function Forecast() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Mon</p>
           </div>
@@ -41,7 +41,7 @@ function Forecast() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Tue</p>
           </div>
@@ -56,7 +56,7 @@ function Forecast() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Wed</p>
           </div>
@@ -71,7 +71,7 @@ function Forecast() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Thu</p>
           </div>
@@ -86,7 +86,7 @@ function Forecast() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row mb-2">
           <div className="col-3">
             <p className="forecast-day">Fri</p>
           </div>
