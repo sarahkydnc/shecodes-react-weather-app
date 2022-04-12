@@ -1,7 +1,6 @@
 import Search from "./Search";
-import Forecast from "./Forecast";
-import Music from "./Music";
 import Footer from "./Footer";
+
 import "./App.css";
 
 function App() {
@@ -14,16 +13,8 @@ function App() {
           </h1>
         </header>
 
-        <div className="row">
-          <div className="col-sm-8">
-            <Search defaultLocation="Singapore" />
-          </div>
-          <div className="col-sm-4">
-            <Forecast />
-            <br />
-            <Music />
-          </div>
-        </div>
+        <Search defaultLocation="Singapore" />
+
         <Footer />
       </div>
     </div>

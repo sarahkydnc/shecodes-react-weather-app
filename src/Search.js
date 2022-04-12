@@ -3,15 +3,17 @@ import { useState } from "react";
 import axios from "axios";
 
 import WeatherToday from "./WeatherToday";
+import Forecast from "./Forecast";
+import Music from "./Music";
 
 function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [location, setLocation] = useState(props.defaultLocation);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
@@ -45,26 +47,34 @@ function Search(props) {
 
   if (weatherData.ready) {
     return (
-      <div>
-        <form id="find-city-form" onSubmit={handleSubmit}>
-          <div className="input-group mb-3">
-            <input
-              type="text"
-              autoFocus="on"
-              onChange={handleLocation}
-              className="form-control"
-              placeholder="Enter a city (e.g. San Francisco)"
-              id="find-input"
-            />
-            <button className="btn btn-outline-warning" type="submit">
-              <i className="fas fa-search"></i>
-            </button>
-          </div>
-        </form>
-        <p id="current-location" className="mt-4 text-center">
-          Use my current location
-        </p>
-        <WeatherToday data={weatherData} />
+      <div className="row">
+        <div className="col-sm-8">
+          <form id="find-city-form" onSubmit={handleSubmit}>
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                autoFocus="on"
+                onChange={handleLocation}
+                className="form-control"
+                placeholder="Enter a city (e.g. San Francisco)"
+                id="find-input"
+              />
+              <button className="btn btn-outline-warning" type="submit">
+                <i className="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <p id="current-location" className="mt-4 text-center">
+            Use my current location
+          </p>
+          <WeatherToday data={weatherData} />
+        </div>
+
+        <div className="col-sm-4">
+          <Forecast coordinates={weatherData.coordinates} />
+          <br />
+          <Music />
+        </div>
       </div>
     );
   } else {
