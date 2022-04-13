@@ -64,9 +64,7 @@ function Search(props) {
               </button>
             </div>
           </form>
-          <p id="current-location" className="mt-4 text-center">
-            Use my current location
-          </p>
+
           <WeatherToday data={weatherData} />
         </div>
 

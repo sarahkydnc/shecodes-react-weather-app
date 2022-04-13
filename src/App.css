@@ -224,19 +224,6 @@ h3 {
   background-color: var(--highlight-color) !important;
 }
 
-#current-location {
-  font-size: 14px;
-  font-style: italic;
-  line-height: 1.25;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-#current-location:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-
 #weather-icon {
   padding-bottom: 15px;
 }
