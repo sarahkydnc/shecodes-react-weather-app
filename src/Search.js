@@ -79,7 +79,7 @@ function Search(props) {
     );
   } else {
     processSearch();
-    return `Loading...`;
+    return <div className="text-warning">Loading...</div>;
   }
 }
 
