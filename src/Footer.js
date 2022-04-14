@@ -11,9 +11,20 @@ function Footer() {
           rel="noreferrer"
           className="clickthru-links"
         >
-          Sarah Kaydence
+          Sarah Kaydence ©
         </a>
-        ⚡️ | Open-sourced on {""}
+        , as part of her{" "}
+        <a
+          href="https://www.shecodes.io/react"
+          target="_blank"
+          rel="noreferrer"
+          className="clickthru-links"
+        >
+          SheCodes React
+        </a>{" "}
+        final projects.
+        <br />
+        Open-sourced on {""}
         <a
           href="https://github.com/sarahkydnc/shecodes-react-weather-app"
           target="_blank"
