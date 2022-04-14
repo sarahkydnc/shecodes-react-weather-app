@@ -47,31 +47,33 @@ function Search(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="row">
-        <div className="col-sm-8">
-          <form id="find-city-form" onSubmit={handleSubmit}>
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                autoFocus="on"
-                onChange={handleLocation}
-                className="form-control"
-                placeholder="Enter a city (e.g. San Francisco)"
-                id="find-input"
-              />
-              <button className="btn btn-outline-warning" type="submit">
-                <i className="fas fa-search"></i>
-              </button>
-            </div>
-          </form>
+      <div>
+        <form id="find-city-form" onSubmit={handleSubmit}>
+          <div className="input-group mb-3">
+            <input
+              type="text"
+              autoFocus="on"
+              onChange={handleLocation}
+              className="form-control"
+              placeholder="Enter a city (e.g. San Francisco)"
+              id="find-input"
+            />
+            <button className="btn btn-outline-warning" type="submit">
+              <i className="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
 
-          <WeatherToday data={weatherData} />
-        </div>
+        <div className="row">
+          <div className="col-sm-8">
+            <WeatherToday data={weatherData} />
+          </div>
 
-        <div className="col-sm-4">
-          <Forecast coordinates={weatherData.coordinates} />
-          <br />
-          <Music />
+          <div className="col-sm-4">
+            <Forecast coordinates={weatherData.coordinates} />
+            <br />
+            <Music />
+          </div>
         </div>
       </div>
     );

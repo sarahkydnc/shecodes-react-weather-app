@@ -2,7 +2,7 @@ import React from "react";
 
 function Music() {
   return (
-    <div className="spotify-api py-4 px-2 shadow-md">
+    <div className="spotify-api py-4 px-2">
       <p className="music-greeting">Some music to get you going!</p>
 
       <div className="container-fluid px-3">

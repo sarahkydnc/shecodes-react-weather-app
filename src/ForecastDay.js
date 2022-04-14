@@ -15,30 +15,32 @@ function ForecastDay(props) {
 
   function day() {
     let date = new Date(props.data.dt * 1000);
-
-    let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     let day = date.getDay();
 
-    return days(day);
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
   }
 
   return (
     <div>
-      <div className="col-3">
-        <p className="forecast-day">{day}</p>
-      </div>
-      <div className="col-3">
-        <WeatherIcon
-          code={props.data.weather[0].icon}
-          id="icon"
-          className="w-100 forecast-icon"
-        />
-      </div>
-      <div className="col-3">
-        <p className="forecast-high">{forecastMax}</p>
-      </div>
-      <div className="col-3">
-        <p className="forecast-low">{forecastMin}</p>
+      <div className="row mt-2">
+        <div className="col-3">
+          <p className="forecast-day">{day()}</p>
+        </div>
+        <div className="col-3">
+          <WeatherIcon
+            code={props.data.weather[0].icon}
+            id="icon"
+            className="w-100 forecast-icon"
+          />
+        </div>
+        <div className="col-3">
+          <p className="forecast-high">{forecastMax()}</p>
+        </div>
+        <div className="col-3">
+          <p className="forecast-low">{forecastMin()}</p>
+        </div>
       </div>
     </div>
   );

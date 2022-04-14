@@ -31,26 +31,20 @@ function Forecast(props) {
 
   if (loaded) {
     return (
-      <div className="weather-forecast px-2">
+      <div className="weather-forecast px-2 mt-2">
         <p className="subtitle fs-5">
           Here's your <strong>FORECAST:</strong>
         </p>
 
         <div className="forecast-days container-fluid" id="forecast">
-          <div className="divider mt-4 mb-2"></div>
+          <div className="divider mt-4 mb-4"></div>
 
           <div>
-            {forecastData.map(function (dailyForecast, index) {
-              if (index < 7) {
-                return (
-                  <div className="row" key={index}>
-                    <ForecastDay data={dailyForecast} />
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })}
+            <ForecastDay data={forecastData[1]} />
+            <ForecastDay data={forecastData[2]} />
+            <ForecastDay data={forecastData[3]} />
+            <ForecastDay data={forecastData[4]} />
+            <ForecastDay data={forecastData[5]} />
           </div>
         </div>
       </div>
