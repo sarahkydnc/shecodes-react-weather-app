@@ -2,7 +2,7 @@ import React from "react";
 import Timestamp from "./Timestamp";
 import CountryName from "./CountryName";
 import WeatherIcon from "./WeatherIcon";
-import WeatherTemp from "./WeatherTemp";
+import WeatherInfo from "./WeatherInfo";
 
 function WeatherToday(props) {
   return (
@@ -53,38 +53,15 @@ function WeatherToday(props) {
           </div>
 
           <div className="col-8">
-            <WeatherTemp
+            <WeatherInfo
               celsius={props.data.temperature}
               feel={props.data.feelsLike}
               low={props.data.temperatureLow}
               high={props.data.temperatureHigh}
+              humidity={props.data.humidity}
+              wind={props.data.wind}
+              pressure={props.data.pressure}
             />
-
-            <div className="row weather-others text-middle mt-2">
-              <div className="col-4">
-                <p className="current-humidity">
-                  Humidity
-                  <br />
-                  <span className="data-highlight">{props.data.humidity}%</span>
-                </p>
-              </div>
-              <div className="col-4">
-                <p className="current-wind">
-                  Wind Speed
-                  <br />
-                  <span className="data-highlight">{props.data.wind} km/h</span>
-                </p>
-              </div>
-              <div className="col-4">
-                <p className="current-pressure">
-                  Pressure
-                  <br />
-                  <span className="data-highlight">
-                    {props.data.pressure} mb
-                  </span>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

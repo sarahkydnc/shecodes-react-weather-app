@@ -240,25 +240,3 @@ h3 {
 #imperial-button {
   width: 50px;
 }
-
-#metric-button {
-  color: var(--highlight-color) !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--highlight-color) !important;
-}
-
-#metric-button:hover {
-  color: var(--primary-color) !important;
-  background-color: var(--highlight-color) !important;
-}
-
-#imperial-button {
-  color: var(--highlight-alt-color) !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--highlight-alt-color) !important;
-}
-
-#imperial-button:hover {
-  color: var(--primary-color) !important;
-  background-color: var(--highlight-alt-color) !important;
-}
