@@ -32,7 +32,7 @@ function ForecastDay(props) {
           <WeatherIcon
             code={props.data.weather[0].icon}
             id="icon"
-            className="w-100 forecast-icon"
+            className="w-100 justify-content-center py-1 forecast-icon"
           />
         </div>
         <div className="col-3">

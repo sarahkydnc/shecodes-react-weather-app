@@ -171,16 +171,14 @@ h3 {
 
 .weather-forecast .forecast-day {
   font-weight: bold;
+  text-align: left;
   text-transform: uppercase;
 }
 
-.weather-forecast .forecast-high {
+.weather-forecast .forecast-high,
+.weather-forecast .forecast-low {
   font-weight: bold;
-}
-
-.weather-forecast .forecast-icon {
-  padding-left: 15px;
-  padding-bottom: 15px;
+  text-align: center;
 }
 
 .weather-forecast,
