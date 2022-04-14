@@ -39,7 +39,7 @@ function WeatherToday(props) {
         </div>
 
         <div className="row">
-          <div className="col-4 justify-content-center">
+          <div className="col-4 justify-content-center mt-4">
             <div className="row">
               <WeatherIcon
                 code={props.data.icon}
@@ -47,7 +47,7 @@ function WeatherToday(props) {
                 id="weather-icon"
               />
             </div>
-            <div className="row">
+            <div className="row mt-3">
               <p className="current-condition">{props.data.description}</p>
             </div>
           </div>

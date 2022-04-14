@@ -176,7 +176,7 @@ function WeatherTemp(props) {
             <p className="current-pressure">
               Pressure
               <br />
-              <span className="data-highlight">{props.pressure} hPa</span>
+              <span className="data-highlight">{props.pressure} mb</span>
             </p>
           </div>
         </div>
