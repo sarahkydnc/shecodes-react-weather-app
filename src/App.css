@@ -109,12 +109,7 @@ h3 {
 }
 
 .weather-today {
-  width: 600px;
-}
-
-.weather-today img {
-  height: 200px;
-  width: 200px;
+  max-width: 600px;
 }
 
 .weather-today .current-date {
@@ -183,7 +178,7 @@ h3 {
 
 .weather-forecast,
 .spotify-api {
-  width: 290px;
+  max-width: 290px;
 }
 
 .spotify-api .music-greeting {
@@ -208,18 +203,29 @@ h3 {
 }
 
 #find-city-form {
-  width: 800px;
+  max-width: 905px;
 }
 
-#find-city-form .btn {
+#find-city-form .search-button {
   color: var(--highlight-color) !important;
   background-color: var(--primary-color) !important;
   border-color: var(--highlight-color) !important;
 }
 
-#find-city-form .btn:hover {
+#find-city-form .search-button:hover {
   color: var(--primary-color) !important;
   background-color: var(--highlight-color) !important;
+}
+
+#find-city-form .location-button {
+  color: var(--highlight-alt-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--highlight-alt-color) !important;
+}
+
+#find-city-form .location-button:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--highlight-alt-color) !important;
 }
 
 #weather-icon {

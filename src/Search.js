@@ -45,6 +45,18 @@ function Search(props) {
     axios.get(urlAPI).then(handleResponse);
   }
 
+  function findLocation(position) {
+    const apiKey = "0096e74278950fd9325fbc33e0f38fed";
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getCurrentLocation() {
+    navigator.geolocation.getCurrentPosition(findLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div>
@@ -58,8 +70,18 @@ function Search(props) {
               placeholder="Enter a city (e.g. San Francisco)"
               id="find-input"
             />
-            <button className="btn btn-outline-warning" type="submit">
+            <button
+              className="btn btn-outline-warning search-button"
+              type="submit"
+            >
               <i className="fas fa-search"></i>
+            </button>
+            <button
+              className="btn btn-outline-warning location-button"
+              type="button"
+              onClick={getCurrentLocation}
+            >
+              <i class="fas fa-location-arrow"></i>
             </button>
           </div>
         </form>
