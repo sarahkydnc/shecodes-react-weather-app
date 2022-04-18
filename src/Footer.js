@@ -13,7 +13,7 @@ function Footer() {
         >
           Sarah Kaydence ©
         </a>
-        , as part of her{" "}
+        , as one of her{" "}
         <a
           href="https://www.shecodes.io/react"
           target="_blank"
@@ -22,7 +22,7 @@ function Footer() {
         >
           SheCodes React
         </a>{" "}
-        final projects.
+        final projects
         <br />
         Open-sourced on {""}
         <a
